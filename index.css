@@ -1,0 +1,25 @@
+.nav-links{
+    list-style-type: none;
+}
+
+#navbar header{
+    font-size: 3vh;
+}
+#navbar{
+    position: fixed;
+    overflow-y: auto; 
+    margin: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: #eeebeb;
+}
+.nav-link{
+    display: block;
+   background-color: rgb(175, 173, 173);
+   padding: 1rem;
+   border-top: 2px solid black;
+}
+.nav-link a{ 
+    color: black;
+    text-decoration: none;
+}

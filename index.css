@@ -12,6 +12,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     background: #eeebeb;
+    width: 16%;
 }
 .nav-link{
     display: block;
@@ -22,4 +23,9 @@
 .nav-link a{ 
     color: black;
     text-decoration: none;
+}
+#main-doc{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 1rem;
 }

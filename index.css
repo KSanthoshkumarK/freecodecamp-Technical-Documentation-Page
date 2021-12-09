@@ -1,31 +1,61 @@
+body{
+    display: grid;
+    grid-template-areas: 'nav main';
+}
+
 .nav-links{
     list-style-type: none;
+    grid-area: links;
 }
 
 #navbar header{
-    font-size: 3vh;
+    font-size: 3vmin;
+    position: fixed;
+    grid-area: header;
+    height: auto;
+    width: auto;
 }
 #navbar{
     position: fixed;
+    display: grid;
     overflow-y: auto; 
     margin: 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     background: #eeebeb;
     width: 16%;
+    grid-area: nav;
+    grid-template-areas: 
+    'header'
+    'links';
 }
 .nav-link{
     display: block;
    background-color: rgb(175, 173, 173);
    padding: 1rem;
    border-top: 2px solid black;
-}
-.nav-link a{ 
-    color: black;
+   color: black;
     text-decoration: none;
 }
+
 #main-doc{
     position: relative;
     margin-left: 20%;
     margin-top: 1rem;
+    grid-area: main;
+}
+@media only screen and (max-width: 500px){
+    body{
+        grid-template-areas: 
+        "nav"
+        "main";
+    }
+    #navbar{
+        position: relative;
+        height: 40vh;
+        width: auto;
+    }
+    #main-doc{
+        margin: auto;
+    }
 }

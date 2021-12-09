@@ -8,31 +8,31 @@
   <title>Build Technical Document</title>
   <link rel="stylesheet" href="./index.css">
 </head>
-<nav id="navbar">
-  <header>C Documentation</header>
-  <ul class="nav-links">
-    <li class='nav-link'>
-      <a href="#Introduction">Intoduction</a>
-    </li>
-    <li class='nav-link'>
-      <a href="#About">About</a>
-    </li>
-    <li class='nav-link'>
-      <a href="#Author">Author</a>
-    </li>
-    <li class='nav-link'>
-      <a href="#MorInfo">More Info</a>
-    </li>
-    <li class='nav-link'>
-      <a href="#Reference">Reference</a>
-    </li>
 
-  </ul>
-</nav>
 
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <nav id="navbar">
+    <header>C Documentation</header>
+    <ul class="nav-links">
+      <li>
+        <a class='nav-link' href="#Introduction">Introduction</a>
+      </li>
+      <li>
+        <a class='nav-link' href="#About">About</a>
+      </li>
+      <li>
+        <a class='nav-link' href="#Author">Author</a>
+      </li>
+      <li>
+        <a class='nav-link' href="#More_Info">More Info</a>
+      </li>
+      <li>
+        <a class='nav-link' href="#Reference">Reference</a>
+      </li>
 
+    </ul>
+  </nav>
   <main id="main-doc">
     <section class="main-section" id="Introduction">
       <header>Introduction</header>
@@ -51,6 +51,7 @@
           variety of purposes by supplementing it with additional objects; for
           example:
         </p>
+        <code>if (true) { var x = 5; } console.log(x); // 5</code>
         <ul>
           <li>
             Client-side JavaScript extends the core language by supplying objects
@@ -84,6 +85,8 @@
             the tutorials linked on the main page about JavaScript.
           </li>
         </ul>
+        <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+        defined</code>
       </article>
     </section>
     <section class="main-section" id="Author">
@@ -97,18 +100,21 @@
           constructs which was the reason why it was renamed from LiveScript to
           JavaScript.
         </p>
-
+        <code>if (condition) { statement_1; } else { statement_2; }</code>
         <p>
           In contrast to Java's compile-time system of classes built by
           declarations, JavaScript supports a runtime system based on a small
           number of data types representing numeric, Boolean, and string values.
           JavaScript has a prototype-based object model instead of the more common
-          class-based object model. The prototype-based model provides dynamic
+          class-based object model. </p>
+        <p>
+          The prototype-based model provides dynamic
           inheritance; that is, what is inherited can vary for individual objects.
           JavaScript also supports functions without any special declarative
           requirements. Functions can be properties of objects, executing as
           loosely typed methods.
         </p>
+        <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
         <p>
           JavaScript is a very free-form language compared to Java. You do not
           have to declare all variables, classes, and methods. You do not have to
@@ -118,14 +124,19 @@
         </p>
       </article>
     </section>
-    <section class="main-section" id="MorInfo">
-      <header>Mor Info</header>
+    <section class="main-section" id="More_Info">
+      <header>More Info</header>
       <article>
-        To get started with writing JavaScript, open the Scratchpad and write your
-        first "Hello world" JavaScript code.
-        Select the code in the pad and hit Ctrl+R to watch it unfold in your
-        browser!
+        <p>
+          To get started with writing JavaScript, open the Scratchpad and write your
+          first "Hello world" JavaScript code.
+          Select the code in the pad and hit Ctrl+R to watch it unfold in your
+          browser!</p>
+        <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+        } else if (condition_n) { statement_n; } else { statement_last; }
+      </code>
       </article>
+
     </section>
     <section class="main-section" id="Reference">
       <header>Reference</header>
